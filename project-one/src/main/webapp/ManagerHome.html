@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Manager Home</title>
+<link type="text/css" rel="stylesheet" href="./styles/default_style.css">
+</head>
+<body>
+	<header>
+		<div class="inlinecontainer">
+			<label class="alignleft">Welcome,&nbsp;</label><label id="currentUsername">manager</label>
+			 <a	href="LogoutServlet" class="alignright">Logout</a>
+		</div>
+		<div style="clear: both;"></div>
+	</header>
+
+
+	<table class="container" id="reimbursements">
+		<tr>
+			<th>ID</th>
+			<th>Employee</th>
+			<th>Description</th>
+			<th>Receipt</th>
+			<th>Status</th>
+			<th>Manager</th>
+		</tr>
+	</table>
+	<script src="javascript/ValidateLogin.js"></script>
+	<script src="./javascript/ManagerGetReimbursements.js"></script>
+</body>
+</html>

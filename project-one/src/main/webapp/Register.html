@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register</title>
+<link type="text/css" rel="stylesheet" href="./styles/default_style.css">
+</head>
+<body>
+	<div class="imgcontainer">
+		<img src="./WebContent/images/jojo.jpg" alt="Avatar"
+			class="avatar">
+	</div>
+	<form action="RegisterServlet" method="POST">
+		<div class="container">
+			<label for="username"><b>Username</b></label> <input type="text"
+				placeholder="Enter Username" name="username" required> <label
+				for="password"><b>Password</b></label> <input type="password"
+				placeholder="Enter Password" name="password" required>
+			<div class="inlinecontainer">
+				<input type="radio" id="employee" name="usertype" value="Employee" required>
+				<label for="employee">Employee</label> <input type="radio"
+					id="manager" name="usertype" value="Manager"> <label
+					for="manager">Manager</label>
+			</div>
+			<div class="inlinecontainer">
+				<button type="submit" class="alignleft">Register</button>
+				<button type="button" onclick="location.href='./Login.html'"
+					class="alignright">Cancel</button>
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+	</form>
+</body>
+</html>

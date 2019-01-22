@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<link type="text/css" rel="stylesheet" href="./styles/default_style.css">
+</head>
+<body>
+	<div class="imgcontainer">
+		<img src="./WebContent/images/snake.jpg" alt="Avatar"
+			class="avatar">
+	</div>
+	<form action="LoginServlet" method="POST">
+		<div class="container">
+			<label for="username"><b>Username</b></label> <input type="text"
+				placeholder="Enter Username" name="username" required> <label
+				for="password"><b>Password</b></label> <input type="password"
+				placeholder="Enter Password" name="password" required>
+			<div class="inlinecontainer">
+				<button type="submit" class="alignleft">Login</button>
+				<button type="button"
+					onclick="location.href='./Register.html'"
+					class="alignright">Register</button>
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+	</form>
+</body>
+</html>
